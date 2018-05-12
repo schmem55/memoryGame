@@ -1,0 +1,61 @@
+
+body {
+  margin: 20px 0;
+  background-image: url('../images/CL.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;}
+
+.row {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+.match{
+  transform: rotateY(180deg);
+  pointer-events: none
+}
+
+.card,.back,.front {
+  height: 150px;
+  width: 150px;
+}
+.back{
+  margin-left: -16px;
+}
+.back,.front {
+  position: absolute !important;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+  pointer-events: none
+}
+
+#spanCounter{
+  border:solid 3px green;
+  position: relative;
+  top: 4px;
+  background-color: blueviolet;
+}
